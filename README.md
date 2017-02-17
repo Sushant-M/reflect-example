@@ -9,4 +9,4 @@ Reflect is the facerecognition API exposed for public by CoWrks. API end points 
 #### TODO - Develop a system that uses RabbitMQ and Celery
 Use RabbitMQ and Celery for queuing the tasks. API end point would take around 4 second to return the result. As the number of images increase, after requesting API end point, each one should go to the queue and wait for the API reply. Using RabbitMQ messaging agent and celery as task queue to perform Asynchronous, or non-blocking, processing of the facerecognition.
 
-# Create required driver modules and main module to complete the task. Use the provided test images to invoke the reflect API endpoint.
+Create required driver modules and main module to complete the task. Use the provided test images to invoke the reflect API endpoint.
