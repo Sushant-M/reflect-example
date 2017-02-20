@@ -1,0 +1,8 @@
+Open new terminal, start the rabbitmq server:
+    sudo rabbitmq-server start
+
+Start celery, keeping logging level as info for now:
+    celery worker -A tasks --loglevel=info
+
+Execute the main.py file from the terminal
+    python main.py
