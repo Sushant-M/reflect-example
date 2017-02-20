@@ -1,6 +1,8 @@
 from tasks import cowrks_task
+import os
+import glob
 
 if __name__ == '__main__':
-    for i in range (1,6):
-        val = cowrks_task.delay(i)
-        print val
+    os.chdir("test_images")
+    for file in glob.glob("*.png"):
+        cowrks_task.delay(file)
